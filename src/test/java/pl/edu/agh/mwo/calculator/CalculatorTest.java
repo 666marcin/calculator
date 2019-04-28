@@ -8,17 +8,19 @@ public class CalculatorTest {
 @Test
     public void testSummary()
 {
-    Assert.assertEquals(3, calc.sum(1,2));
-    Assert.assertEquals(0, calc.sum(10,-10));
-    Assert.assertEquals(-50, calc.sum(-70,20));
+    Calculator calculator;
+    Assert.assertEquals(3, calculator.sum(1,2));
+    Assert.assertEquals(0, calculator.sum(10,-10));
+    Assert.assertEquals(-50, calculator.sum(-70,20));
 }
     @Test
     public void testSubtract()
     {
-        Assert.assertEquals(3, calc.subtract(5,2));
-        Assert.assertEquals(0, calc.subtract(-10,-10));
-        Assert.assertEquals(-50, calc.subtract(-70,-20));
-        Assert.assertEquals(-30, calc.subtract(70,110));
+        Calculator calculator;
+        Assert.assertEquals(3, calculator.subtract(5,2));
+        Assert.assertEquals(0, calculator.subtract(-10,-10));
+        Assert.assertEquals(-50, calculator.subtract(-70,-20));
+        Assert.assertEquals(-30, calculator.subtract(70,110));
     }
 
 }
